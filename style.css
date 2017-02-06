@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0
+	font-family: "Times New Roman", Tahoma, serif;
+}
+
+:root {
+	background: rgba(0, 120, 0, 0.6);
+	opacity: 0.6;
+	height: 140%;
+}
+
+::selection {
+	background: teal;
+	color: white;
+}
+
+:target {
+	background: #ccc;
+	border: 1px solid black;
+}
+
+.invoke:after {
+	content: '\0028 \0029 \003B';
+}
+
+ul { display: block; }
+
+ul li { display: inline-block; }
+
+ul li ul { display: none; }
+
+ul li:hover ul {
+	display: block;
+}
+
+ul li ul li {
+	display: block;
+	padding: 0 0 0 15px;
+}
+
+ul li ul li:hover {
+	background: #ff0000;
+}
+
+p:first-of-type {
+	background: lightblue;
+	width: 25%;
+	line-height: 2.5em;
+	padding: 0 0 0 15px;
+}
+
+p:nth-of-type(2) {
+	background: lightgreen;
+	width: 50%;
+	line-height: 2.5em;
+	padding: 10px 0 0 15px;
+}
+
+p:last-of-type {
+	background: coral;
+	line-height: 2.0em;
+	direction: rtl;
+	padding: 0 15px 0 0;
+	width: calc(100% - 50px);
+}
+
+a:link {
+	color: blue;
+}
+
+a:hover {
+	color: red;
+	background: #ccc;
+}
+
+a:visited {
+	color: #000;
+}
+
+input:checked {
+	width: 50px;
+	height: 50px;
+}
+
+.rtl:hover {
+	direction: ltr;
+}
+
+input[type="text"]:enabled {
+	background: #ffff00;
+}
+
+input[type="text"]:focus {
+	border: 2px solid #ffff00;
+}
+
+input[type="text"] {
+	line-height: 2.0em;
+	color: #fff;
+	padding: 0 0 0 5px;
+}
+
+h1 {
+	display: none;
+}
+
+div:hover h1 {
+	display: block;
+	background: #eff;
+	width: 75%;
+}
+
+div:nth-of-type(1) {
+	background: #ffe;
+}
+
+input[type="text"]:disabled {
+	background: #ccc;
+}
+
+p::first-letter {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+p.rtl {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
+
+p::last-letter {
+	text-transform: capitalize;
+}
+
+.box {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+
+#gradient {
+	background: linear-gradient(yellow,red,black);
+}
+
+.radial-gradient {
+	background: radial-gradient(lightgrey,white,lightgreen);
+}
+
+#body {
+	position: inherit;
+	width: 95%;
+	left: 20px;
+	margin: 50px 20px;
+	padding-top: 190px !important;
+}
+
+#title {
+	font-size: 50px;
+	color: orange;
+}
+
+#header {
+	margin: 0;
+	top: 0;
+	background: #000;
+	height: 15em;
+	width: 100%;
+	opacity: 0.8;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#header.sticky {
+	position: fixed;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: 2.5em;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	opacity: 0.8;
+}
+
+h2 {
+	color: #fff;
+	width: 100%;
+	line-height: 9.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	transition: all 0.4s ease;
+}
+
+h2.sticky {
+	position: fixed;
+	left: 0;
+	top: 5px;
+	line-height: 1em;
+}
+
+.murky {
+	background: #ff9;
+}
+
+.murky:hover {
+	direction: rtl;
+}
+
+.link:hover {
+	text-decoration: overline;
+}
+
+div#title:hover {
+	padding: 0 0 0 10px;
+	letter-spacing: 0.8em;
+	border-left: 5px solid red;
+	border-right: 5px solid red;
+}
+
+input:in-range {
+	border: 2px solid lightgreen;
+}
+
+input:invalid {
+	border: 2px solid red;
+}
+
+input:read-only {
+	border: 3px solid orange;
+	width: 45px;
+}
+
+input:read-write {
+	font-color: #000;
+}
+
+p:lang(de) {
+	background: #fff;
+	color: black;
+}
+
+.red {
+	font-size: 30px;
+	color: red;
+}
+
+#x:hover {
+	background: lavender;
+}
+
+span:only-child {
+	text-transform: uppercase
+}
+
+input:optional {
+	background: lightgreen;
+}
+
+#keyframes {
+	width: 93%;
+	height: 20px;
+	-webkit-animation: move 5s infinite;
+	animation: move 5s infinite;
+}
+
+@-webkit-keyframes move {
+	from {background: blue;}
+	to {background: red;}
+}
+
+@keyframes move {
+	from {background: blue;}
+	to {background: red;}
+}
+
+
+
+
